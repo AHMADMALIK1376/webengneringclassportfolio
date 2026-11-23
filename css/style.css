@@ -312,8 +312,14 @@ main {
 
 .hero-figure img {
   border: 8px solid var(--off-white);
-  border-radius: 50%;
+  border-radius: 28px;
   box-shadow: var(--shadow);
+}
+
+.hero-meta {
+  margin-top: 1.2rem;
+  color: var(--brown);
+  font-weight: 700;
 }
 
 .hero-figure figcaption {
@@ -424,6 +430,142 @@ main {
   border: 1px solid var(--sand);
   border-radius: 999px;
   background-color: var(--butter);
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* ---------- 8b. Projects & experience ---------- */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(136, 107, 90, 0.15);
+  border-radius: var(--radius);
+  background-color: var(--off-white);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.project-banner {
+  position: relative;
+  padding: 1.6rem 1.75rem;
+  color: var(--butter);
+}
+
+.project-banner--coral {
+  background-color: var(--coral);
+}
+
+.project-banner--green {
+  background-color: var(--green);
+}
+
+.project-banner h3 {
+  margin: 0.4rem 0 0.2rem;
+  color: var(--butter);
+  font-size: 2rem;
+}
+
+.project-banner p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 0.15rem 0.75rem;
+  border-radius: 999px;
+  background-color: var(--butter);
+  color: var(--navy);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.project-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.project-period {
+  color: var(--brown);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.project-points {
+  padding-left: 1.2rem;
+}
+
+.project-points li::marker {
+  color: var(--coral);
+}
+
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.stack-list li {
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  background-color: var(--sand);
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.project-body .btn-navy {
+  margin-top: auto;
+}
+
+.more-projects {
+  margin-top: 1.5rem;
+}
+
+.more-projects h3 {
+  margin-bottom: 0.8rem;
+}
+
+.mini-projects {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.mini-projects li {
+  padding: 0.25rem 0;
+}
+
+.job-card {
+  border-left: 5px solid var(--coral);
+}
+
+.job-card h3 {
+  margin: 0 0 0.2rem;
+}
+
+.job-period {
+  margin-bottom: 0.3rem;
+  color: var(--coral);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.job-company {
   color: var(--green);
   font-weight: 700;
 }
