@@ -523,3 +523,168 @@ ul.styled-list li::marker {
   background-color: var(--gold);
   color: var(--navy);
 }
+
+/* ---------- 11. Favourite Media: CSS Grid two-column layout ---------- */
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.media-col {
+  display: grid;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.media-col h2 {
+  margin: 0;
+}
+
+/* social media post cards */
+.post {
+  padding: 1.2rem;
+  border: 1px solid rgba(136, 107, 90, 0.15);
+  border-radius: var(--radius);
+  background-color: var(--off-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.post-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-head strong {
+  display: block;
+  line-height: 1.2;
+}
+
+.post-meta {
+  color: var(--brown);
+  font-size: 0.85rem;
+}
+
+.post-avatar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--navy);
+  color: var(--butter);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.post-avatar--coral {
+  background-color: var(--coral);
+}
+
+.post-avatar--green {
+  background-color: var(--green);
+}
+
+.post img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-sm);
+}
+
+.post code {
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  background-color: var(--butter);
+  color: var(--coral);
+}
+
+.post-foot {
+  margin-top: 0.75rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--sand);
+  color: var(--brown);
+  font-size: 0.9rem;
+}
+
+/* video cards */
+.video-card {
+  padding: 1rem;
+  border-radius: var(--radius);
+  background-color: var(--off-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background-color: var(--navy);
+}
+
+.video-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-card h3 {
+  margin: 0.9rem 0 0.3rem;
+  font-size: 1.2rem;
+}
+
+.video-card p {
+  margin: 0;
+  color: var(--brown);
+}
+
+/* pictures */
+.photo-card {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background-color: var(--off-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.photo-card figcaption {
+  padding: 1rem 1.2rem;
+  color: var(--brown);
+}
+
+.badge-local,
+.badge-online {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  color: var(--butter);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.badge-local {
+  background-color: var(--green);
+}
+
+.badge-online {
+  background-color: var(--coral);
+}
