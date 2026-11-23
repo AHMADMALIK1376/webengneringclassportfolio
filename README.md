@@ -9,10 +9,15 @@ A four-page professional portfolio built with **HTML5**, **CSS3** (one external 
 
 | File | Page | Highlights |
 |------|------|-----------|
-| `index.html` | Home | Semantic header/nav/section/article/footer, meta tags, favicon |
+| `index.html` | Home | Profile, live projects (FocusFlow, FinTrack), experience, skills, achievements, CV download |
 | `hobbies.html` | Hobbies | Ordered + unordered lists, online & physical game, two styled tables |
 | `media.html` | Favourite Media | CSS Grid two-column layout, social posts, 5 YouTube videos, local + online image |
 | `contact.html` | Contact | Details, embedded Google Map, friends table, styled contact form |
+
+## Featured projects
+
+- **FocusFlow** – student productivity management system · https://focus-flow-two-pi.vercel.app/
+- **FinTrack** – personal finance tracker · https://fintrack-y4wq.onrender.com/index.html
 
 ## CSS techniques
 
