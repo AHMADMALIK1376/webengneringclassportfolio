@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Favourite media of M. Ahmad Malik – social media posts, favourite YouTube videos and pictures.">
+  <meta name="description" content="Favourite media of M. Ahmad Malik - social media posts, favourite YouTube videos and pictures.">
   <meta name="keywords" content="favourite media, YouTube, social media, HTML, CSS, CS50">
   <meta name="author" content="M. Ahmad Malik">
   <meta name="theme-color" content="#2A3053">
-  <title>Favourite Media | M. Ahmad Malik – Portfolio</title>
+  <title>Favourite Media | M. Ahmad Malik - Portfolio</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +21,11 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html"><span class="brand-mark">AM</span> Ahmad Malik</a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="hobbies.html">Hobbies</a></li>
-          <li><a class="active" href="media.html" aria-current="page">Favourite Media</a></li>
+          <li><a class="active" href="media.html">Favourite Media</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -33,17 +33,15 @@
   </header>
 
   <main>
-    <section class="container page-banner" aria-labelledby="page-title">
+    <section class="container page-banner">
       <span class="eyebrow">Posts · Videos · Pictures</span>
       <h1 id="page-title">Favourite Media</h1>
       <p>A few of my social media posts on the left, and the YouTube videos that taught me the most on the right.</p>
     </section>
 
-    <!-- CSS Grid two-column layout -->
     <div class="container media-grid">
 
-      <!-- Left column: social media posts -->
-      <section class="media-col" aria-labelledby="posts-title">
+      <section class="media-col">
         <h2 id="posts-title" class="section-title">Social media posts</h2>
 
         <article class="post">
@@ -67,7 +65,7 @@
               <span class="post-meta">@ahmadmalik · Instagram</span>
             </div>
           </header>
-          <p>Sunday well spent – tape-ball cricket with the H-9 crew. 🏏 We won by 12 runs!</p>
+          <p>Sunday well spent - tape-ball cricket with the H-9 crew. 🏏 We won by 12 runs!</p>
           <img src="images/post-cricket.png" alt="Post graphic reading Match Day, weekend cricket with the H-9 crew" width="800" height="500" loading="lazy">
           <footer class="post-foot">❤ 96 · 💬 15</footer>
         </article>
@@ -85,8 +83,7 @@
         </article>
       </section>
 
-      <!-- Right column: YouTube videos -->
-      <section class="media-col" aria-labelledby="videos-title">
+      <section class="media-col">
         <h2 id="videos-title" class="section-title">Favourite YouTube videos</h2>
 
         <article class="video-card">
@@ -131,30 +128,29 @@
 
         <article class="video-card">
           <div class="video-frame">
-            <iframe src="https://www.youtube.com/embed/8mAITcNt710" title="Harvard CS50 – Full Computer Science University Course"
+            <iframe src="https://www.youtube.com/embed/8mAITcNt710" title="Harvard CS50 - Full Computer Science University Course"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-          <h3>Harvard CS50 – Full Course</h3>
+          <h3>Harvard CS50 - Full Course</h3>
           <p>The legendary intro to computer science that I keep coming back to.</p>
         </article>
       </section>
     </div>
 
-    <!-- Local and online images -->
-    <section class="container section-block" aria-labelledby="pictures-title">
+    <section class="container section-block">
       <h2 id="pictures-title" class="section-title">Pictures</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <figure class="photo-card">
             <img src="images/margalla-hills.png" alt="Illustration of the Margalla Hills at sunset" width="800" height="500" loading="lazy">
-            <figcaption><span class="badge-local">Local image</span> Margalla Hills, Islamabad – my favourite hiking spot.</figcaption>
+            <figcaption><span class="badge-local">Local image</span> Margalla Hills, Islamabad - my favourite hiking spot.</figcaption>
           </figure>
         </div>
         <div class="col-md-6">
           <figure class="photo-card">
             <img src="https://picsum.photos/id/0/800/500" alt="A laptop on a wooden desk, ready for coding" width="800" height="500" loading="lazy">
-            <figcaption><span class="badge-online">Online image</span> My kind of workspace – a laptop and a quiet desk.</figcaption>
+            <figcaption><span class="badge-online">Online image</span> My kind of workspace - a laptop and a quiet desk.</figcaption>
           </figure>
         </div>
       </div>

@@ -1,20 +1,14 @@
-/* =========================================================
-   CSC 337 – Assignment 1 · Portfolio stylesheet
-   One external stylesheet linked from every page.
-   ========================================================= */
-
-/* ---------- 1. Colour palette & design tokens ---------- */
 :root {
-  --navy: #2A3053;          /* title, text, buttons, selected nav */
-  --coral: #F08366;         /* accents, focused field border */
-  --cream: #F4EEE6;         /* page background */
-  --off-white: #FCFBFA;     /* input fields, cards */
-  --butter: #FFF6D6;        /* button text, selected nav text */
-  --sand: #F2EACE;          /* unselected nav text */
-  --brown: #886B5A;         /* labels, footer, shadows */
-  --gold: #F6D77A;          /* soft glow on inputs */
-  --green: #3F5E52;         /* secondary lines */
-  --error: #D64545;         /* error states */
+  --navy: #2A3053;
+  --coral: #F08366;
+  --cream: #F4EEE6;
+  --off-white: #FCFBFA;
+  --butter: #FFF6D6;
+  --sand: #F2EACE;
+  --brown: #886B5A;
+  --gold: #F6D77A;
+  --green: #3F5E52;
+  --error: #D64545;
 
   --font-head: "DM Serif Display", Georgia, serif;
   --font-body: "Nunito", "Segoe UI", Arial, sans-serif;
@@ -26,7 +20,6 @@
   --space: 1.5rem;
 }
 
-/* ---------- 2. Base ---------- */
 *,
 *::before,
 *::after {
@@ -88,7 +81,6 @@ main {
   padding: 2.5rem 0 3.5rem;
 }
 
-/* ---------- 3. Sticky header + Flexbox navigation ---------- */
 .site-header {
   position: sticky;
   top: 0;
@@ -162,7 +154,6 @@ main {
   color: var(--butter);
 }
 
-/* ---------- 4. Page hero / banner ---------- */
 .page-banner {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -189,7 +180,6 @@ main {
   text-transform: uppercase;
 }
 
-/* ---------- 5. Cards & sections ---------- */
 .panel {
   height: 100%;
   padding: 1.75rem;
@@ -228,7 +218,6 @@ main {
   color: var(--green);
 }
 
-/* ---------- 6. Buttons ---------- */
 .btn-navy,
 .btn-coral {
   display: inline-block;
@@ -267,7 +256,6 @@ main {
   color: var(--butter);
 }
 
-/* ---------- 7. Footer ---------- */
 .site-footer {
   padding: 2rem 0;
   background-color: var(--brown);
@@ -287,7 +275,6 @@ main {
   color: var(--butter);
 }
 
-/* ---------- 8. Home page ---------- */
 .hero {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -434,7 +421,6 @@ main {
   font-weight: 700;
 }
 
-/* ---------- 8b. Projects & experience ---------- */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -570,7 +556,6 @@ main {
   font-weight: 700;
 }
 
-/* ---------- 9. Hobbies page: lists & game cards ---------- */
 .styled-list {
   margin: 0;
   padding-left: 1.4rem;
@@ -618,7 +603,6 @@ ul.styled-list li::marker {
   color: var(--butter);
 }
 
-/* ---------- 10. Styled tables (borders, backgrounds, hover) ---------- */
 .table-wrap {
   border: 2px solid var(--navy);
   border-radius: var(--radius-sm);
@@ -673,7 +657,6 @@ ul.styled-list li::marker {
   color: var(--navy);
 }
 
-/* ---------- 11. Favourite Media: CSS Grid two-column layout ---------- */
 .media-grid {
   display: grid;
   grid-template-columns: 1fr 1.25fr;
@@ -692,7 +675,6 @@ ul.styled-list li::marker {
   margin: 0;
 }
 
-/* social media post cards */
 .post {
   padding: 1.2rem;
   border: 1px solid rgba(136, 107, 90, 0.15);
@@ -764,7 +746,6 @@ ul.styled-list li::marker {
   font-size: 0.9rem;
 }
 
-/* video cards */
 .video-card {
   padding: 1rem;
   border-radius: var(--radius);
@@ -775,7 +756,7 @@ ul.styled-list li::marker {
 .video-frame {
   position: relative;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
   overflow: hidden;
   border-radius: var(--radius-sm);
   background-color: var(--navy);
@@ -800,7 +781,6 @@ ul.styled-list li::marker {
   color: var(--brown);
 }
 
-/* pictures */
 .photo-card {
   height: 100%;
   margin: 0;
@@ -842,7 +822,6 @@ ul.styled-list li::marker {
   background-color: var(--coral);
 }
 
-/* ---------- 12. Contact page ---------- */
 .contact-list {
   margin: 0;
 }
@@ -874,7 +853,7 @@ ul.styled-list li::marker {
 .map-frame {
   position: relative;
   height: 0;
-  padding-bottom: 62.5%; /* 16:10 */
+  padding-bottom: 62.5%;
   overflow: hidden;
   border: 2px solid var(--navy);
   border-radius: var(--radius-sm);
@@ -889,7 +868,6 @@ ul.styled-list li::marker {
   border: 0;
 }
 
-/* ---------- 13. Styled form fields ---------- */
 .contact-form {
   display: grid;
   gap: 1.2rem;
@@ -946,7 +924,6 @@ ul.styled-list li::marker {
   box-shadow: 0 0 0 4px var(--gold);
 }
 
-/* error state: only after the user has typed something invalid */
 .field input:not(:placeholder-shown):invalid {
   border-color: var(--error);
 }
@@ -968,7 +945,6 @@ ul.styled-list li::marker {
   gap: 0.8rem;
 }
 
-/* ---------- 14. Responsive design (media queries) ---------- */
 @media (max-width: 991px) {
   .media-grid {
     grid-template-columns: 1fr;
@@ -994,7 +970,6 @@ ul.styled-list li::marker {
   }
 }
 
-/* small phones – no horizontal scrolling at 375 px */
 @media (max-width: 480px) {
   body {
     font-size: 0.95rem;
