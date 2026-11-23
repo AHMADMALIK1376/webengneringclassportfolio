@@ -420,3 +420,106 @@ main {
   color: var(--green);
   font-weight: 700;
 }
+
+/* ---------- 9. Hobbies page: lists & game cards ---------- */
+.styled-list {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.styled-list li {
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--sand);
+}
+
+.styled-list li:last-child {
+  border-bottom: none;
+}
+
+ol.styled-list li::marker {
+  color: var(--coral);
+  font-weight: 800;
+}
+
+ul.styled-list li::marker {
+  color: var(--green);
+}
+
+.game-card h2 {
+  margin-top: 0.6rem;
+}
+
+.game-tag {
+  display: inline-block;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.game-tag--online {
+  background-color: var(--navy);
+  color: var(--butter);
+}
+
+.game-tag--physical {
+  background-color: var(--green);
+  color: var(--butter);
+}
+
+/* ---------- 10. Styled tables (borders, backgrounds, hover) ---------- */
+.table-wrap {
+  border: 2px solid var(--navy);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--off-white);
+}
+
+.styled-table caption {
+  caption-side: top;
+  padding: 0.7rem 1rem;
+  background-color: var(--butter);
+  color: var(--brown);
+  font-weight: 700;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--sand);
+  text-align: left;
+}
+
+.styled-table thead th {
+  border-color: var(--navy);
+  background-color: var(--navy);
+  color: var(--butter);
+  font-weight: 800;
+}
+
+.styled-table tbody th {
+  background-color: var(--butter);
+  color: var(--green);
+}
+
+.styled-table tbody tr:nth-child(even) td {
+  background-color: var(--cream);
+}
+
+.styled-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.styled-table tbody tr:hover td,
+.styled-table tbody tr:hover th {
+  background-color: var(--gold);
+  color: var(--navy);
+}
