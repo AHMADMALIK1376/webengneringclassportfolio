@@ -27,6 +27,12 @@
 }
 
 /* ---------- 2. Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -67,7 +73,6 @@ h3 {
 a {
   color: var(--navy);
   text-decoration-color: var(--coral);
-  text-underline-offset: 3px;
 }
 
 a:hover {
@@ -159,7 +164,8 @@ main {
 
 /* ---------- 4. Page hero / banner ---------- */
 .page-banner {
-  padding: 3rem 0 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -283,7 +289,8 @@ main {
 
 /* ---------- 8. Home page ---------- */
 .hero {
-  padding: 2rem 0 3rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .highlight {
@@ -559,8 +566,11 @@ ul.styled-list li::marker {
   margin-bottom: 0.75rem;
 }
 
-.post-head strong {
-  display: block;
+.post-name {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -622,7 +632,8 @@ ul.styled-list li::marker {
 
 .video-frame {
   position: relative;
-  aspect-ratio: 16 / 9;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
   overflow: hidden;
   border-radius: var(--radius-sm);
   background-color: var(--navy);
@@ -660,7 +671,7 @@ ul.styled-list li::marker {
 .photo-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: auto;
   object-fit: cover;
 }
 
@@ -720,7 +731,8 @@ ul.styled-list li::marker {
 
 .map-frame {
   position: relative;
-  aspect-ratio: 16 / 10;
+  height: 0;
+  padding-bottom: 62.5%; /* 16:10 */
   overflow: hidden;
   border: 2px solid var(--navy);
   border-radius: var(--radius-sm);
@@ -864,7 +876,8 @@ ul.styled-list li::marker {
   }
 
   .page-banner {
-    padding: 1.5rem 0 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
   }
 
   .panel {
