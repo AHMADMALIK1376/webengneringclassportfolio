@@ -813,3 +813,83 @@ ul.styled-list li::marker {
   flex-wrap: wrap;
   gap: 0.8rem;
 }
+
+/* ---------- 14. Responsive design (media queries) ---------- */
+@media (max-width: 991px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .main-nav ul {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* small phones – no horizontal scrolling at 375 px */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  h2 {
+    font-size: 1.55rem;
+  }
+
+  main {
+    padding-top: 1.5rem;
+  }
+
+  .main-nav a {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.85rem;
+  }
+
+  .page-banner {
+    padding: 1.5rem 0 1rem;
+  }
+
+  .panel {
+    padding: 1.2rem;
+  }
+
+  .stat strong {
+    font-size: 1.7rem;
+  }
+
+  .styled-table {
+    font-size: 0.8rem;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 0.5rem 0.45rem;
+  }
+
+  .styled-table caption {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .hero-actions a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
