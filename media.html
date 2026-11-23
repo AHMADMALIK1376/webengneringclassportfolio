@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Favourite media of M. Ahmad Malik – social media posts, favourite YouTube videos and pictures.">
+  <meta name="keywords" content="favourite media, YouTube, social media, HTML, CSS, CS50">
+  <meta name="author" content="M. Ahmad Malik">
+  <meta name="theme-color" content="#2A3053">
+  <title>Favourite Media | M. Ahmad Malik – Portfolio</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">AM</span> Ahmad Malik</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a class="active" href="media.html" aria-current="page">Favourite Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-banner" aria-labelledby="page-title">
+      <span class="eyebrow">Posts · Videos · Pictures</span>
+      <h1 id="page-title">Favourite Media</h1>
+      <p>A few of my social media posts on the left, and the YouTube videos that taught me the most on the right.</p>
+    </section>
+
+    <!-- CSS Grid two-column layout -->
+    <div class="container media-grid">
+
+      <!-- Left column: social media posts -->
+      <section class="media-col" aria-labelledby="posts-title">
+        <h2 id="posts-title" class="section-title">Social media posts</h2>
+
+        <article class="post">
+          <header class="post-head">
+            <span class="post-avatar">AM</span>
+            <div>
+              <strong>Ahmad Malik</strong>
+              <span class="post-meta">@ahmadmalik · LinkedIn</span>
+            </div>
+          </header>
+          <p>My very first web page is finally live on GitHub Pages! Semantic HTML + one clean CSS file. On to the next one. 🚀</p>
+          <img src="images/post-code.png" alt="Post graphic reading Hello, Web! First page live on GitHub Pages" width="800" height="500" loading="lazy">
+          <footer class="post-foot">❤ 128 · 💬 24 · ↻ 9</footer>
+        </article>
+
+        <article class="post">
+          <header class="post-head">
+            <span class="post-avatar post-avatar--coral">AM</span>
+            <div>
+              <strong>Ahmad Malik</strong>
+              <span class="post-meta">@ahmadmalik · Instagram</span>
+            </div>
+          </header>
+          <p>Sunday well spent – tape-ball cricket with the H-9 crew. 🏏 We won by 12 runs!</p>
+          <img src="images/post-cricket.png" alt="Post graphic reading Match Day, weekend cricket with the H-9 crew" width="800" height="500" loading="lazy">
+          <footer class="post-foot">❤ 96 · 💬 15</footer>
+        </article>
+
+        <article class="post">
+          <header class="post-head">
+            <span class="post-avatar post-avatar--green">AM</span>
+            <div>
+              <strong>Ahmad Malik</strong>
+              <span class="post-meta">@ahmadmalik · X</span>
+            </div>
+          </header>
+          <p class="mb-0">Today's lesson: <code>display: grid</code> makes two-column layouts so much easier than floats. #CSS #WebDev</p>
+          <footer class="post-foot">❤ 42 · ↻ 6</footer>
+        </article>
+      </section>
+
+      <!-- Right column: YouTube videos -->
+      <section class="media-col" aria-labelledby="videos-title">
+        <h2 id="videos-title" class="section-title">Favourite YouTube videos</h2>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/ok-plXXHlWw" title="HTML in 100 Seconds" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>HTML in 100 Seconds</h3>
+          <p>A quick, fun summary of how HTML structures every web page.</p>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/OEV8gMkCHXQ" title="CSS in 100 Seconds" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>CSS in 100 Seconds</h3>
+          <p>Selectors, the box model and the cascade explained in under two minutes.</p>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/K74l26pE4YA" title="CSS Flexbox in 100 Seconds" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>CSS Flexbox in 100 Seconds</h3>
+          <p>The video that finally made Flexbox click for my navigation bar.</p>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" title="HTML Crash Course For Absolute Beginners" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>HTML Crash Course For Absolute Beginners</h3>
+          <p>A complete beginner-friendly walkthrough of HTML tags and page structure.</p>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/8mAITcNt710" title="Harvard CS50 – Full Computer Science University Course" loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h3>Harvard CS50 – Full Course</h3>
+          <p>The legendary intro to computer science that I keep coming back to.</p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Local and online images -->
+    <section class="container section-block" aria-labelledby="pictures-title">
+      <h2 id="pictures-title" class="section-title">Pictures</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <figure class="photo-card">
+            <img src="images/margalla-hills.png" alt="Illustration of the Margalla Hills at sunset" width="800" height="500" loading="lazy">
+            <figcaption><span class="badge-local">Local image</span> Margalla Hills, Islamabad – my favourite hiking spot.</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <figure class="photo-card">
+            <img src="https://picsum.photos/id/0/800/500" alt="A laptop on a wooden desk, ready for coding" width="800" height="500" loading="lazy">
+            <figcaption><span class="badge-online">Online image</span> My kind of workspace – a laptop and a quiet desk.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 M. Ahmad Malik · CSC 337 Web Programming Languages</p>
+      <p>Iqra University, Islamabad Campus (H-9) · <a href="contact.html">Contact me</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
