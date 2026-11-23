@@ -1,0 +1,282 @@
+/* =========================================================
+   CSC 337 – Assignment 1 · Portfolio stylesheet
+   One external stylesheet linked from every page.
+   ========================================================= */
+
+/* ---------- 1. Colour palette & design tokens ---------- */
+:root {
+  --navy: #2A3053;          /* title, text, buttons, selected nav */
+  --coral: #F08366;         /* accents, focused field border */
+  --cream: #F4EEE6;         /* page background */
+  --off-white: #FCFBFA;     /* input fields, cards */
+  --butter: #FFF6D6;        /* button text, selected nav text */
+  --sand: #F2EACE;          /* unselected nav text */
+  --brown: #886B5A;         /* labels, footer, shadows */
+  --gold: #F6D77A;          /* soft glow on inputs */
+  --green: #3F5E52;         /* secondary lines */
+  --error: #D64545;         /* error states */
+
+  --font-head: "DM Serif Display", Georgia, serif;
+  --font-body: "Nunito", "Segoe UI", Arial, sans-serif;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 10px 30px rgba(136, 107, 90, 0.18);
+  --shadow-sm: 0 4px 12px rgba(136, 107, 90, 0.15);
+  --space: 1.5rem;
+}
+
+/* ---------- 2. Base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-head);
+  color: var(--navy);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+a {
+  color: var(--navy);
+  text-decoration-color: var(--coral);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--coral);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 2.5rem 0 3.5rem;
+}
+
+/* ---------- 3. Sticky header + Flexbox navigation ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--navy);
+  box-shadow: 0 4px 18px rgba(42, 48, 83, 0.25);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--butter);
+  font-family: var(--font-head);
+  font-size: 1.45rem;
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: var(--gold);
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: var(--coral);
+  color: var(--butter);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  color: var(--sand);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:hover {
+  background-color: rgba(242, 234, 206, 0.12);
+  color: var(--butter);
+}
+
+.main-nav a.active {
+  background-color: var(--coral);
+  color: var(--butter);
+}
+
+/* ---------- 4. Page hero / banner ---------- */
+.page-banner {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.page-banner p {
+  max-width: 640px;
+  margin: 0 auto;
+  color: var(--brown);
+  font-size: 1.1rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background-color: var(--butter);
+  color: var(--brown);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------- 5. Cards & sections ---------- */
+.panel {
+  height: 100%;
+  padding: 1.75rem;
+  border: 1px solid rgba(136, 107, 90, 0.15);
+  border-radius: var(--radius);
+  background-color: var(--off-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.panel h2,
+.panel h3 {
+  margin-top: 0;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--coral);
+}
+
+.text-brown {
+  color: var(--brown);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+/* ---------- 6. Buttons ---------- */
+.btn-navy,
+.btn-coral {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  border: 2px solid var(--navy);
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-navy {
+  background-color: var(--navy);
+  color: var(--butter);
+}
+
+.btn-coral {
+  background-color: transparent;
+  color: var(--navy);
+}
+
+.btn-navy:hover,
+.btn-coral:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-navy:hover {
+  color: var(--gold);
+}
+
+.btn-coral:hover {
+  border-color: var(--coral);
+  background-color: var(--coral);
+  color: var(--butter);
+}
+
+/* ---------- 7. Footer ---------- */
+.site-footer {
+  padding: 2rem 0;
+  background-color: var(--brown);
+  color: var(--butter);
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+}
+
+.site-footer a {
+  color: var(--gold);
+}
+
+.site-footer a:hover {
+  color: var(--butter);
+}
