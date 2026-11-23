@@ -280,3 +280,143 @@ main {
 .site-footer a:hover {
   color: var(--butter);
 }
+
+/* ---------- 8. Home page ---------- */
+.hero {
+  padding: 2rem 0 3rem;
+}
+
+.highlight {
+  background-image: linear-gradient(transparent 62%, var(--gold) 62%);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.hero-figure {
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.hero-figure img {
+  border: 8px solid var(--off-white);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+.hero-figure figcaption {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  background-color: var(--off-white);
+  color: var(--brown);
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.stats {
+  margin-bottom: 3rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 0.5rem;
+  border-radius: var(--radius);
+  background-color: var(--navy);
+  color: var(--sand);
+  text-align: center;
+}
+
+.stat strong {
+  color: var(--gold);
+  font-family: var(--font-head);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.section-block {
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 1.2rem 1.6rem;
+  border-left: 2px solid var(--sand);
+}
+
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--off-white);
+  border-radius: 50%;
+  background-color: var(--coral);
+}
+
+.timeline h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1.15rem;
+}
+
+.skill-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  background-color: var(--butter);
+  color: var(--coral);
+  font-weight: 800;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--sand);
+  border-radius: 999px;
+  background-color: var(--butter);
+  color: var(--green);
+  font-weight: 700;
+}
